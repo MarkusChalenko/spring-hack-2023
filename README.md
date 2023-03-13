@@ -46,7 +46,6 @@
     - Alias
     - Validation
     - 404 Page
-    - Local Storage name
     - Avatar for chat and user
     - Modal window
 
@@ -66,6 +65,7 @@ Technologies:
 -   LocalStorage?
 -   react-icons
 -   for images / files?
+-   nanoid
 
 ### Features
 
