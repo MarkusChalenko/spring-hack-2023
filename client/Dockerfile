@@ -9,5 +9,3 @@ RUN yarn
 COPY /client ./
 
 EXPOSE 5173
-
-CMD ["yarn", "build"]

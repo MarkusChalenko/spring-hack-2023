@@ -1,5 +1,16 @@
 version: '3'
 services:
+  webserver:
+    image: nginx:1.21.4-alpine
+    container_name: nginx-webserver
+    restart: always
+    volumes:
+      - ./:/var/www
+      - ./cfg/nginx/:/etc/nginx/conf.d/
+      - ./storage/logs/nginx/:/var/logs/nginx/
+    ports:
+      - "80:80"
+      
   client:
     container_name: client
     build:
@@ -9,7 +20,7 @@ services:
       - "5173:5173"
     volumes:
       - "./client:/client"
-    command: sh -c "yarn && yarn dev"
+    command: sh -c "yarn && yarn build && yarn dev"
     # command: "tail -f /dev/null"
   server: 
     container_name: server
