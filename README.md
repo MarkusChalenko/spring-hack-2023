@@ -34,19 +34,19 @@
 
 ### Frontend
 
-    - Authorization
-    - Profile
+    - Authorization - backend
+    - Profile - mobile
     - ChatScreen
     - ChatList
-    - Time
-    - Search chat
-    - Emoji
+    - Time - V
+    - Search chat - backend
+    - Emoji - V
     - ChatSettings
-    - Linters
-    - Alias
-    - Validation
-    - 404 Page
-    - Avatar for chat and user
+    - Linters - V
+    - Alias - V
+    - Validation - change login
+    - 404 Page - V
+    - Avatar for chat and user - V
     - Modal window
 
 Technologies:
@@ -56,16 +56,14 @@ Technologies:
 -   Typescript
 -   React-hook-form
 -   yup
--   Socket.io / socket.io-client
+-   socket.io-client
 -   emoji-mart
--   react-timeago
+-   moment
 -   Tailwind
 -   classnames
--   react-imask / react-phone-number-input
--   LocalStorage?
+-   react-imask
 -   react-icons
 -   for images / files?
--   nanoid
 
 ### Features
 
